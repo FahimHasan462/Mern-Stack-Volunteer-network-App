@@ -1,0 +1,98 @@
+.app {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  min-height: 100vh;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 0;
+}
+
+.app-header {
+  width: 100%;
+  background-color: #282c34;
+  color: white;
+  padding: 40px 20px;
+  box-sizing: border-box;
+}
+
+.logo {
+  height: 80px;
+  margin-bottom: 15px;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;   /* stack top to bottom */
+  justify-content: center;
+  align-items: center;
+  gap: 20px;                /* spacing between buttons */
+  margin-top: 50px;
+}
+
+.button-container button {
+  background-color: #1e88e5;
+  color: white;
+  padding: 15px 30px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  width: 220px;             /* fixed width for consistency */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  transition: transform 0.25s, box-shadow 0.25s, background-color 0.25s;
+}
+
+.button-container button:hover {
+  background-color: #1565c0;
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+
+table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+thead tr {
+  color: white;
+}
+
+tbody tr {
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+/* Volunteer table */
+.volunteer-table thead tr {
+  background-color: #4caf50;
+}
+
+.volunteer-table tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.volunteer-table tbody tr:hover {
+  background-color: #ddd;
+}
+
+/* Assignment table */
+.assignment-table thead tr {
+  background-color: #2196f3;
+}
+
+.assignment-table tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.assignment-table tbody tr:hover {
+  background-color: #ddd;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
